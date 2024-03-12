@@ -1,0 +1,56 @@
+\documentclass[10pt,a4 paper]{article}
+\usepackage{array}
+\usepackage{enumitem}
+
+\title{\Large\textbf{Bisection Method}}
+\author{Shubham and Kunal}
+\date{\today}
+
+
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\textbf{T}he bisection method is the basic method of root finding. As cycles are conducted over period of time, each interval gets halved.
+\end{abstract}
+
+\section{Introduction}
+\textbf{B}isection Method is a straightforward method to find the numerical solution of non-linear equation.Among all the technique it is the simplest one. Separates the interval and subdivides the interval in which the root of the equation lies.
+The principle behind this technique is \textbf{intermediate theorem for continuous function}.
+But the time complexity of this theorem is very high that's why it's slow.
+
+\section{Algorithm}
+\begin{itemize}[label={$\bullet$}]
+\item Find two point, say a and b such that a<b and g(a)*g(b)$<$0.
+\item Find the midpoint of a and b, say "h".
+\item h is the root of the given function if g(h)=0;else follow the next step.
+\item Divide the interval [a,b].
+\item If g(h)*g(b)$<$0,let a=h.
+\item Else if g(h)*g(a),let b=h
+\item Repeat above three steps until g(h)=0.
+
+\end{itemize}
+
+
+\begin{center}
+\begin{tabular}{ |m{5em}| m{1cm}| m{1cm}| m{1cm}|}
+\hline
+ITERATION NUMBER&ROOT LIES BETWEEN&VALUE OF Y&col4\\[0.5ex]
+\hline\hline
+1 & 6 & 73737 & 366 \\
+\hline
+2 & 7 & 37388 & 377\\
+\hline
+4 & 3 & 73722 & 200\\
+\hline
+6 & 7 & 32838 & 328\\
+\hline
+9 & 0 & 19192 & 738\\ [1ex]
+
+
+\hline
+\end{tabular}
+\end{center}
+
+\end{document}
