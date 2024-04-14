@@ -3,7 +3,15 @@
 \usepackage[english]{babel}
 \usepackage[square,numbers]{natbib}
 \bibliographystyle{abbrvnat}
+\usepackage{comment}
 
+\begin{comment}
+In essence, these lines configure your LaTeX document for:
+
+English language support (babel)
+In-text citations with square brackets and numbered references (natbib)
+An abbreviated bibliography style (abbrvnat)
+\end{comment}
 
 \title{\textbf{Referencing and Citing}}
 \date{}
@@ -17,11 +25,16 @@ management. Three items are cited: \textit{The \LaTeX\ Companion} book \cite{lat
 Donald Knuth's website \cite{knuthwebsite}. The \LaTeX\ related items are
 \cite{latexcompanion,knuthwebsite}. 
 
-\medskip
+\medskip  %for medium sized vertical space(6 pt)
 
-\bibliography{Sample}
+\bibliography{Sample} %use to import sample reference database.
 
-
+\begin{comment}
+\texttt{} is used for monospace type font.
+\textit{} for italic font
+\cite{} is generak citing, but
+\citet{} when the author's name(s) are part of the sentence you're writing., so it also mention author name with citing.
+\end{comment}
 
 
 \end{document}
