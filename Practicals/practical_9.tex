@@ -1,0 +1,64 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{array,multirow,tabularX}
+
+\setlength{\tabcolsep}{18pt} 
+\renewcommand{\arraystretch}{1.5}
+\setlength{\arrayrulewidth}{0.5mm}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\begin{document}
+
+\addcontentsline{toc}{section}{Table of Contents}  % Add "Table of Contents" to TOC
+
+
+\tableofcontents
+\listoftables
+\listoffigures
+\newpage
+
+\section{First Section} 
+
+
+\section{Second Section} 
+\begin{table}[h] % Add 'table' environment
+    \caption{List of Countries} % Caption for the table
+\begin{tabularx}{\textwidth}{|X|X|X|} 
+
+\hline
+\multicolumn{3}{|c|}{Country List}   \\ \hline
+Country Name or Area Name & ISO ALPHA 2 Code & ISO ALPHA 3 \\ \hline
+Afghanistan & AF & AFG \\
+Aland Islands & AX & ALA \\
+Albania & AL & ALB \\
+Algeria & DZ & DZA \\
+American Samoa & AS & ASM \\
+Andorra & AD & ANA \\
+Angola & AO & AGO \\
+\hline
+
+\end{tabularx}
+\end{table}
+
+\begin{figure}
+\centering
+\begin{subfigure}{0.45\textwidth}
+    \includegraphics[width=\textwidth,height=0.25\textheight]{example-image}
+    \caption{First subfigure.}
+    \label{first}
+\end{subfigure}
+\hfill
+\vspace{1em}
+\begin{subfigure}{0.45\textwidth}
+    \includegraphics[width=\textwidth,height=0.25\textheight]{example-image}
+    \caption{Second subfigure.}
+    \label{second}
+\end{subfigure}
+
+        
+\caption{This is a figure containing several subfigures in \LaTeX.}
+\label{figures}
+
+\end{figure}
+
+\end{document}

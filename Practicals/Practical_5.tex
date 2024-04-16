@@ -1,0 +1,58 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{xcolor}
+\usepackage[ruled,linesnumbered,vlined]{algorithm2e}
+
+\title{\Large{\textbf{Algorithm}}}
+\date{}
+
+
+\newcommand\mycommfont[1]{\footnotesize\ttfamily\textcolor{blue}{#1}}
+\SetCommentSty{mycommfont}
+
+\begin{document}
+\maketitle
+
+
+\begin{algorithm}[!ht] 
+\DontPrintSemicolon
+
+\caption{Example code}\label{Sample_alg}
+\KwIn{Your Input}
+\KwOut{Your output}
+\KwData{Testing set $x$}
+
+$\sum_{i=1}^{\infty} := 0$  \tcp*{this is a comment}
+\tcc{Now this is an if...else conditional loop}
+
+\If{Condition 1}
+ { Do Something       \tcp*{this is another comment}
+   \If{sub-Condition}
+   {Do a lot}
+    }
+    
+\ElseIf{Condition 2}
+    {
+    	Do Otherwise \;
+        \tcc{Now this is a for loop}
+        \For{sequence}    
+        { 
+        	loop instructions
+        }
+    }
+
+\Else
+    {
+    	Do the rest
+    }
+    
+    \tcc{Now this is a While loop}
+    
+\While{Condition}
+   {
+   		Do something\;
+   }
+
+\end{algorithm}
+
+\end{document}
