@@ -1,0 +1,47 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{subcaption}
+
+
+
+\begin{document}
+
+\begin{figure}
+\centering
+\begin{subfigure}{0.45\textwidth}
+    \includegraphics[width=\textwidth,height=0.25\textheight]{example-image}
+    \caption{First subfigure.}
+    \label{first}
+\end{subfigure}
+\hfill
+\vspace{1em}
+\begin{subfigure}{0.45\textwidth}
+    \includegraphics[width=\textwidth,height=0.25\textheight]{example-image}
+    \caption{Second subfigure.}
+    \label{second}
+\end{subfigure}
+
+\begin{subfigure}{0.45\textwidth}
+    \includegraphics[width=\textwidth,height=0.25\textheight]{example-image}
+    \caption{Third subfigure.}
+    \label{third}
+\end{subfigure}
+\hfill
+\begin{subfigure}{0.45\textwidth}
+    \includegraphics[width=\textwidth,height=0.25\textheight]{example-image}
+    \caption{Fourth subfigure.}
+    \label{fourth}
+\end{subfigure}
+        
+\caption{This is a figure containing several subfigures in \LaTeX.}
+\label{figures}
+
+
+\end{figure}
+
+\begin{flushleft}
+In the text, you can refer to subfigures of figure \ref{figures} as \ref{first}, \ref{second}, \ref{third} and \ref{fourth} and to the sub-index as (\subref{first}), (\subref{second}), (\subref{third}) and (\subref{fourth}).
+\end{flushleft}
+
+\listoffigures
+\end{document}
