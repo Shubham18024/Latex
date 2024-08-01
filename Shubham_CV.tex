@@ -1,0 +1,104 @@
+\documentclass[a4paper]{moderncv}
+
+\usepackage[scale=0.75]{geometry}
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath,amsfonts,amsthm}     % Math packages
+\usepackage{graphicx}                    % Enable pdflatex
+\usepackage[svgnames]{xcolor}            % Colors by their 'svgnames'
+\usepackage{tikz}
+\usepackage{kpfonts} % for \varheartsuit , also changes font
+\usepackage{color}
+\usepackage{url}
+\newcommand*\Hs{\ensuremath{\color{red}\varheartsuit}}
+
+%%% Heart-stab command
+\newcommand{\heartstab}{%
+\begin{tikzpicture}%
+\draw [line width=0.0mm, white] (3.5ex,0.4ex) -- (3.5ex,0.4ex);
+\Large{$\Hs$};
+\draw [line width=0.30mm, black] (-0.7ex,0.7ex) -- (1.2ex,1.2ex);%
+\draw [line width=0.50mm, black] (0.8ex,0.65ex) -- (0.55ex,1.45ex);%
+\end{tikzpicture}%
+}
+
+%%% Squiggly arrow
+\newcommand{\squigarr}{
+{\Large \color{blue}$\rightsquigarrow$}
+}
+
+\moderncvtheme[purple]{classic} %also casual option we have.
+
+\firstname{\fontsize{26}{30}\mdseries\upshape Shubham}
+\familyname{\fontsize{26}{30}\mdseries\upshape Tiwari}
+\title{Curriculum Vitae}
+
+\address{RZ D-5 Subhash Park}{Street number : 6}{Uttam Nagar West - 110059} 
+\mobile{+91 84487 17517}
+\email{shubh.tiwari2244@gmail.com}
+\photo{me_image.jpeg}
+\extrainfo{\url{https://github.com/Shubham18024}}
+\quote{" Dream, dream, dream. Dreams transform into thoughts and thoughts result in action."}
+
+% Adjust the hints column width
+\setlength{\hintscolumnwidth}{3cm}
+
+\begin{document}
+\maketitle
+\section{Personal Details}
+\cvitem{Birth}{2005/14/05}
+\cvitem{Family Status}{Unmarried}
+\cvitem{Nationality}{Indian}
+
+\section{Education}
+\cventry{2022--Present}{Undergraduate}{University of Delhi}{Delhi}{\textit{Expected Graduation: 2026}}{B.Sc (Hons) Mathematics}
+\cventry{2021--2022}{Higher Secondary}{Rajkiya Pratibha Vikas Vidyalaya}{Hari Nagar, Delhi}{\textit{93.8\%}}{}
+\cventry{2019--2020}{Secondary}{Government Boys Senior Secondary School}{Naraina Village, Delhi}{\textit{95.6\%}}{}
+
+\section{Work Experience}
+\cventry{2022--2023}{Volunteer}{SFI Delhi}{(Computer Science Teacher)}{}{}
+
+\cventry{2023--Present}{Project: Benford's Law Video Analysis}{\url{https://github.com/Shubham18024/Benfords-Law_VideoAnalysis}}{}{}{
+\begin{itemize}
+    \item Conceptualized and independently developed a project inspired by the Netflix Documentary "Connected", focusing on the analysis of videos and images using Benford's Law to distinguish between AI-generated and authentic content.
+    \item Implemented a Python script that processes video or image input, decomposes it frame by frame, applies Benford's Law to each frame, and calculates an average result across all frames.
+    \item Currently working on this ongoing project, which is not yet fully developed.
+\end{itemize}
+}
+
+\cventry{2024--Present}{Developed}{Freexy}{\url{https://shubham18024.github.io/Freexy/}}{}{
+\begin{itemize}
+    \item Founded and developed Freexy, a centralized platform dedicated to simplifying access to free alternatives to paid software and websites.
+    \item Designed and implemented the website to save users valuable time and effort by providing a comprehensive collection of free resources, empowering them to fulfill their needs without the burden of costs.
+\end{itemize}
+}
+
+\cventry{2024--Present}{Research Intern}{Statistical Analysis of Data}{\url{https://github.com/Shubham18024/Census_Analysis}}{}{
+\begin{itemize}
+    \item Engaged in a research internship focused on statistical analysis of demographic data to uncover trends and insights from census datasets.
+    \item Conducting thorough analyses of population distributions, demographic trends, and other relevant metrics to derive meaningful interpretations.
+\end{itemize}
+}
+
+
+
+\section{Language Skills}
+\cvlanguage{\heartstab Hindi}{Native Language}{}
+\cvlanguage{\squigarr English}{Fluently}{}
+\cvlanguage{\squigarr Punjabi}{Elementary proficiency}{}
+
+\section{Special Skills}
+\cventry{Programming}{\heartstab Python,\heartstab Maxima,\squigarr HTML,\squigarr CSS,\squigarr Bootstrap and \squigarr javascript}{}{}{}{}
+\cventry{Software}{\LaTeX,IBM SPSS,Microsoft office suite}{}{}{}{}
+\cventry{Other}{Vedic mathematics,Leadership}{}{}{}{}
+
+\section{Achievements and Interest}
+\cventry{\heartstab}{Won Third Prize in District-level Science Project Exhibition}{}{}{}{
+\begin{itemize}
+    \item The project aimed to convert Delhi's garbage into energy. The idea focused on setting up proper execution to make Delhi clean and green
+\end{itemize}}
+
+\cvitem{\heartstab}{Won First Prize in All Over India Sanskrit Quiz Competition}
+\cvitem{\heartstab}{Interest in \textbf{Machine Learning and Artificial Intelligence}}
+
+\end{document}
