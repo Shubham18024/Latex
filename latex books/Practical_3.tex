@@ -1,0 +1,97 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath, amssymb}
+\usepackage{hyperref}
+\usepackage{geometry}
+\geometry{margin=1in}
+
+\title{Writing Equations in \LaTeX}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+This document showcases various ways to write mathematical equations in \LaTeX, along with how to cite and reference them.
+
+\section*{1. Inline Equations}
+
+Inline equations appear within text, such as \( a^2 + b^2 = c^2 \), or the famous identity \( e^{i\pi} + 1 = 0 \).
+
+\section*{2. Displayed Equations}
+
+Equations can be displayed on a separate line for clarity:
+
+\[
+\int_0^1 x^2 \, dx = \frac{1}{3}
+\]
+
+\begin{equation}
+E = mc^2
+\end{equation}
+
+\section*{3. Aligning Multiple Equations}
+
+When showing multiple steps or related expressions, aligned equations work best:
+
+\begin{align}
+x + y &= 10 \\
+x - y &= 4
+\end{align}
+
+\section*{4. Centered Equations Without Alignment}
+
+For unrelated equations:
+
+\begin{gather}
+a + b = c \\
+m^2 - n^2 = (m+n)(m-n)
+\end{gather}
+
+\section*{5. Long Equations (Multline)}
+
+Long equations that don’t fit in one line can be written as:
+
+\begin{multline}
+f(x) = a_0 + a_1x + a_2x^2 + a_3x^3 + \dots + a_nx^n + \\
++ a_{n+1}x^{n+1} + \dots + a_{2n}x^{2n}
+\end{multline}
+
+\section*{6. Piecewise Functions}
+
+Define functions based on conditions:
+
+\begin{equation}
+f(x) = \begin{cases}
+x^2 & \text{if } x \geq 0 \\
+-x & \text{if } x < 0
+\end{cases}
+\end{equation}
+
+\section*{7. Using \texttt{eqnarray}}
+
+Although somewhat outdated, \texttt{eqnarray} can still be used:
+
+\begin{eqnarray}
+a &=& b + c \\
+  &=& d - e
+\end{eqnarray}
+
+\section*{8. Referencing and Bibliography}
+
+Equation~\ref{eq:newton} below expresses Newton's second law of motion:
+
+\begin{equation}
+F = ma
+\label{eq:newton}
+\end{equation}
+
+The Pythagorean theorem, \( a^2 + b^2 = c^2 \), remains central in Euclidean geometry. This and other essential mathematical results are well discussed in \textit{The \LaTeX\ Companion}~\cite{latexcompanion}.
+
+\begin{thebibliography}{9}
+\bibitem{latexcompanion}
+Michel Goossens, Frank Mittelbach, and Alexander Samarin,\\
+\textit{The \LaTeX\ Companion}, Addison-Wesley, 1993.
+\end{thebibliography}
+
+\end{document}
