@@ -1,0 +1,43 @@
+\documentclass{beamer}
+\usetheme{berlin}
+\usepackage{amssymb}
+\title{\textbf{Iterated Exponential Growth}}
+\author{\textbf{Shubham Tiwari \\ Section : A \\ Semester : 6 \\ Department of Mathematics \\ Dyal Singh College}}
+\date{}
+
+\begin{document}
+
+\begin{frame}
+\maketitle
+\end{frame}
+
+\begin{frame}{Introduction}
+For a large class of transcendental entire functions, including exponential and trigonometric functions, points in the fast escaping set are characterised as those whose orbits exhibit \textbf{iterated exponential growth}.
+
+Let us define $F \colon [0,\infty) \to [0,\infty)$ by $F(t) = \exp(t) -1$. 
+
+Then $F(t) > t$ for $t > 0$, and hence the sequence $F^n(t)$ tends to infinity.
+
+We are interested in the rate at which these orbits grow.
+\end{frame}
+
+\begin{frame}{Definition 2.1}
+\textbf{(Iterated Exponential Growth)} 
+
+A sequence $(a_n)_{n=0}^{\infty}$ of non-negative real numbers has iterated exponential growth if
+\[
+0 < \liminf_{n \to \infty} F^{-n}(a_n) \leq \limsup_{n \to \infty} F^{-n}(a_n) < \infty.
+\]
+
+The specific function $F$ is not relevant; any exponentially growing function gives rise to the same notion of iterated exponential growth.
+\end{frame}
+
+\begin{frame}{Proposition 2.2}
+\textbf{(Properties of Iterated Exponential Growth)} 
+
+(a) Let $\delta > 0$ and define $\Omega_\delta(t) := \exp(\delta t)$ for $t \in \mathbb{R}$. Let $t_0$ be such that $\Omega_\delta(t) > t$ for $t \geq t_0$. Then the sequence $(\Omega_\delta^n(t_0))_{n=0}^{\infty}$ has iterated exponential growth.
+
+(b) Let $C > 1$. A sequence $(a_n)_{n=0}^{\infty}$ has iterated exponential growth if and only if the sequence $(a_n^C)_{n=0}^{\infty}$ has iterated exponential growth.
+\end{frame}
+
+\end{document}

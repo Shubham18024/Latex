@@ -1,0 +1,140 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\title{\textbf{SEC Assignment}}
+\author{Ankur Tiwari \\ Sem 6 \\ Section A \\ Roll No. 22/18040}
+\date{}
+\begin{document}
+\maketitle
+
+\section*{\underline{Solution 1}}
+\emph{\textbf{Code :}}
+\begin{verbatim}
+\begin{align*}
+ z  & = y^4 + 4 \\
+  & = (y^2 + 2)^2 -4y^2 \\
+ &  \leq (y^2 +2)^2.  
+\end{align*}
+\end{verbatim}
+
+\begin{align*}
+ z  & = y^4 + 4 \\
+  & = (y^2 + 2)^2 -4y^2 \\
+ &  \leq (y^2 +2)^2.  
+\end{align*}
+
+
+\section*{\underline{Solution 2}}
+\[
+f(x) =
+\begin{cases}
+x^2, & \text{for } 0 \leq x \leq 2, \\
+\sqrt{x}, & \text{for } 0 \leq x \leq 2.
+\end{cases}
+\]
+
+\textbf{\emph{Code :}}
+\begin{verbatim}
+\begin{center}
+\setlength{\unitlength}{1cm}
+\begin{picture}(6,6)
+
+% Axes
+\put(0,0){\vector(1,0){6}} % x-axis
+\put(0,0){\vector(0,1){6}} % y-axis
+
+% Labels
+\put(6,0){\makebox(0,0)[l]{$x$}}
+\put(0,6){\makebox(0,0)[b]{$y$}}
+\put(-0.3,-0.3){\makebox(0,0){$0$}}
+
+% Plot points for y = x^2
+\multiput(0,0)(0.5,0){5}{\circle*{0.1}} % x = 0, 0.5, 1, 1.5, 2
+\put(0.5,0.25){\circle*{0.1}}  % (0.5, 0.25)
+\put(1,1){\circle*{0.1}}       % (1,1)
+\put(1.5,2.25){\circle*{0.1}}  % (1.5,2.25)
+\put(2,4){\circle*{0.1}}       % (2,4)
+
+
+\linethickness{0.75pt}
+\qbezier(0,0)(1,0)(2,4)
+
+
+\put(0,0){\circle*{0.1}}   
+\put(0.5,0.707){\circle*{0.1}} 
+\put(1,1){\circle*{0.1}}       
+\put(1.5,1.224){\circle*{0.1}} 
+\put(2,1.414){\circle*{0.1}}   
+
+
+\linethickness{0.5pt}
+\qbezier(0,0)(1,1)(2,1.414)
+
+\end{picture}
+\end{center}
+\end{verbatim}
+
+\begin{center}
+\setlength{\unitlength}{1cm}
+\begin{picture}(6,6)
+
+% Axes
+\put(0,0){\vector(1,0){6}} % x-axis
+\put(0,0){\vector(0,1){6}} % y-axis
+
+% Labels
+\put(6,0){\makebox(0,0)[l]{$x$}}
+\put(0,6){\makebox(0,0)[b]{$y$}}
+\put(-0.3,-0.3){\makebox(0,0){$0$}}
+
+% Plot points for y = x^2
+\multiput(0,0)(0.5,0){5}{\circle*{0.1}} % x = 0, 0.5, 1, 1.5, 2
+\put(0.5,0.25){\circle*{0.1}}  % (0.5, 0.25)
+\put(1,1){\circle*{0.1}}       % (1,1)
+\put(1.5,2.25){\circle*{0.1}}  % (1.5,2.25)
+\put(2,4){\circle*{0.1}}       % (2,4)
+
+
+\linethickness{0.75pt}
+\qbezier(0,0)(1,0)(2,4)
+
+
+\put(0,0){\circle*{0.1}}   
+\put(0.5,0.707){\circle*{0.1}} 
+\put(1,1){\circle*{0.1}}       
+\put(1.5,1.224){\circle*{0.1}} 
+\put(2,1.414){\circle*{0.1}}   
+
+
+\linethickness{0.5pt}
+\qbezier(0,0)(1,1)(2,1.414)
+
+\end{picture}
+\end{center}
+
+\section*{\underline{Solution 3}}
+\emph{\textbf{Code :}}
+
+\begin{verbatim}
+\[ \begin{pmatrix} \hspace{0.1in}
+\begin{vmatrix}
+a_{11} & b_{12} \\
+c_{21} & d_{22}
+\end{vmatrix} & = & x^2 + y^2 + z^2 \hspace{0.2in}
+\end{pmatrix}.
+\] 
+\end{verbatim}
+
+\[ \begin{pmatrix} \hspace{0.1in}
+\begin{vmatrix}
+a_{11} & b_{12} \\
+c_{21} & d_{22}
+\end{vmatrix} & = & x^2 + y^2 + z^2 \hspace{0.2in}
+\end{pmatrix}.
+\] 
+
+
+\end{document}
